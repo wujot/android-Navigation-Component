@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".FirstFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="8dp">
+
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_item"
+                app:errorEnabled="true"
+        >
+            <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/input_name"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_item"
+                android:layout_below="@+id/input_layout_name"
+                app:errorEnabled="true"
+        >
+            <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_surname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/input_surname"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+                android:id="@+id/button_next"
+                android:text="@string/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/margin_item"
+        />
+
+    </RelativeLayout>
+
+</FrameLayout>

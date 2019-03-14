@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Step</string>
+    <!-- Button -->
+    <string name="button_next">NEXT</string>
+    <!-- Inputs -->
+    <string name="input_name">Name</string>
+    <string name="input_surname">Surname</string>
+    <string name="input_gender_male">Male</string>
+    <string name="input_gender_female">Female</string>
+    <string name="input_about_poland">I live in Poland</string>
+    <string name="input_about_developer">I am Android Developer</string>
+    <string name="input_about_sing">I like singing</string>
+    <string name="input_about_cook">I like cooking</string>
+    <string name="input_about_tired">I am tired</string>
+    <!-- Action Bar Menu -->
+    <string name="menu_clear">Clear</string>
+    <!-- Radio buttons groups titles -->
+    <string name="input_groups_gender">Gender</string>
+    <string name="input_groups_about">About</string>
+    <!-- Titles -->
+    <string name="title_step_one">Step 1/2</string>
+    <string name="title_step_two">Step 2/2</string>
+    <string name="title_step_summary">Summary</string>
+    <!-- Error messages -->
+    <string name="error_is_empty">Field can not be empty</string>
+    <string name="error_is_first_capital">First letter must be capital</string>
+    <string name="error_is_min">Field must have at least 3 characters</string>
+    <string name="error_gender">You must choose a gender</string>
+    <!-- Summary titles -->
+    <string name="summary_title_name">Name:</string>
+    <string name="summary_title_surname">Surname:</string>
+    <string name="summary_title_gender">Gender:</string>
+    <string name="summary_title_about">About:</string>
+</resources>

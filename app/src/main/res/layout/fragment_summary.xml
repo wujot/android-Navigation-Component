@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".SummaryFragment">
+
+    <LinearLayout
+            android:id="@+id/summary_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin_item"
+    >
+        <TextView
+                android:id="@+id/summary_name_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textAlignment="textEnd"
+                android:paddingEnd="@dimen/margin_item"
+                android:paddingStart="@dimen/margin_item"
+                android:textSize="@dimen/text_size_title"
+                android:text="@string/summary_title_name"
+        />
+        <TextView
+                android:id="@+id/summary_name_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/text_size_content"
+                android:textStyle="bold"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/summary_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/summary_name"
+            android:layout_margin="@dimen/margin_item"
+    >
+        <TextView
+                android:id="@+id/summary_surname_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textAlignment="textEnd"
+                android:paddingEnd="@dimen/margin_item"
+                android:paddingStart="@dimen/margin_item"
+                android:textSize="@dimen/text_size_title"
+                android:text="@string/summary_title_surname"
+        />
+        <TextView
+                android:id="@+id/summary_surname_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/text_size_content"
+                android:textStyle="bold"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/summary_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/summary_surname"
+            android:layout_margin="@dimen/margin_item"
+    >
+        <TextView
+                android:id="@+id/summary_gender_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textAlignment="textEnd"
+                android:paddingEnd="@dimen/margin_item"
+                android:paddingStart="@dimen/margin_item"
+                android:textSize="@dimen/text_size_title"
+                android:text="@string/summary_title_gender"
+        />
+        <TextView
+                android:id="@+id/summary_gender_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/text_size_content"
+                android:textStyle="bold"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/summary_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/summary_gender"
+            android:layout_margin="@dimen/margin_item"
+    >
+        <TextView
+                android:id="@+id/summary_about_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textAlignment="textEnd"
+                android:paddingEnd="@dimen/margin_item"
+                android:paddingStart="@dimen/margin_item"
+                android:textSize="@dimen/text_size_title"
+                android:text="@string/summary_title_about"
+        />
+        <TextView
+                android:id="@+id/summary_about_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/text_size_content"
+                android:textStyle="bold"
+        />
+    </LinearLayout>
+
+
+
+    <!--
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="8dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fragment 3" />
+
+            <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back to the 1st fragment" />
+
+        </LinearLayout>
+    -->
+</RelativeLayout>

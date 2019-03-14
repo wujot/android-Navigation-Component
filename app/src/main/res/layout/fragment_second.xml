@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".SecondFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="8dp">
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_item"
+                app:errorEnabled="true"
+        >
+
+            <RadioGroup
+                    android:id="@+id/input_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_item"
+            >
+
+                <TextView
+                        android:id="@+id/input_gender_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/input_groups_gender"
+                        android:textSize="@dimen/text_size_title"
+                />
+
+                <RadioButton
+                        android:id="@+id/input_gender_male"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/input_gender_male"
+                        android:textSize="@dimen/text_size_content"/>
+
+                <RadioButton
+                        android:id="@+id/input_gender_female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/input_gender_female"
+                        android:textSize="@dimen/text_size_content"/>
+
+            </RadioGroup>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_gender"
+                android:layout_margin="@dimen/margin_item"
+                app:errorEnabled="true"
+        >
+
+            <RadioGroup
+                    android:id="@+id/input_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_item"
+                    android:layout_below="@+id/input_layout_gender"
+            >
+
+                <TextView
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_title"
+                        android:text="@string/input_groups_about"
+                />
+
+                <CheckBox android:id="@+id/input_about_poland"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/text_size_content"
+                          android:text="@string/input_about_poland"
+                />
+
+                <CheckBox android:id="@+id/input_about_developer"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/text_size_content"
+                          android:text="@string/input_about_developer"
+                />
+
+                <CheckBox android:id="@+id/input_about_sing"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/text_size_content"
+                          android:text="@string/input_about_sing"
+                />
+
+                <CheckBox android:id="@+id/input_about_cook"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/text_size_content"
+                          android:text="@string/input_about_cook"
+                />
+
+                <CheckBox android:id="@+id/input_about_tired"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/text_size_content"
+                          android:text="@string/input_about_tired"
+                />
+
+            </RadioGroup>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+                android:id="@+id/button_summary"
+                android:text="@string/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/margin_item"
+        />
+
+
+
+
+
+
+
+        <!--
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fragment 2" />
+
+                <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Navigate to 3rd fragment" />
+        -->
+    </RelativeLayout>
+
+</FrameLayout>

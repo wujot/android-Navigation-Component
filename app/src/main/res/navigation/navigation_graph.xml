@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation_graph"
+            app:startDestination="@id/firstFragment">
+
+    <fragment
+            android:id="@+id/firstFragment"
+            android:name="com.hemmersbach.android.FirstFragment"
+            android:label="Step 1/2"
+            tools:layout="@layout/fragment_first">
+
+        <action
+                android:id="@+id/action_firstFragment_to_secondFragment"
+                app:destination="@id/secondFragment"/>
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/secondFragment"
+            android:name="com.hemmersbach.android.SecondFragment"
+            android:label="Step 2/2"
+            tools:layout="@layout/fragment_second">
+        <action
+
+                android:id="@+id/action_secondFragment_to_summaryFragment"
+                app:destination="@id/summaryFragment"/>
+
+        <argument
+                android:name="person"
+                app:argType="com.hemmersbach.android.model.Person"
+        />
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/summaryFragment"
+            android:name="com.hemmersbach.android.SummaryFragment"
+            android:label="Summary"
+            tools:layout="@layout/fragment_summary">
+
+        <action
+                android:id="@+id/action_summaryFragment_to_firstFragment"
+                app:destination="@id/firstFragment"/>
+
+        <argument
+                android:name="person"
+                app:argType="com.hemmersbach.android.model.Person"
+        />
+
+    </fragment>
+</navigation>
